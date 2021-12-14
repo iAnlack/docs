@@ -8,29 +8,29 @@ helpviewer_keywords:
   - "C# language, coding conventions"
 ---
 
-# C# Coding Conventions
+# C# Соглашения о кодировании
 
-Coding conventions serve the following purposes:
+Соглашения о кодировании служат следующим целям:
 
 > [!div class="checklist"]
 >
-> - They create a consistent look to the code, so that readers can focus on content, not layout.
-> - They enable readers to understand the code more quickly by making assumptions based on previous experience.
-> - They facilitate copying, changing, and maintaining the code.
-> - They demonstrate C# best practices.
+> - Они придают коду единообразный вид, чтобы читатели могли сосредоточиться на содержании, а не на оформлении.
+> - Они позволяют читателям быстрее понять код, делая предположения, основанные на предыдущем опыте.
+> - Они облегчают копирование, изменение и сопровождение кода.
+> - Они демонстрируют лучшие практики C#.
 
-> [!IMPORTANT]
-> The guidelines in this article are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) guidelines. You can use them, or adapt them to your needs. The primary objectives are consistency and readability within your project, team, organization, or company source code.
+> [!ВАЖНО]
+> Рекомендации, приведенные в данной статье, используются компанией Microsoft при разработке примеров и документации. Они были взяты из руководства [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md). Вы можете использовать их или адаптировать под свои потребности. Основными целями являются последовательность и читабельность исходного кода вашего проекта, команды, организации или компании.
 
-## Naming conventions
+## Соглашения об именовании
 
-There are several naming conventions to consider when writing C# code.
+Существует несколько соглашений об именовании, которые следует учитывать при написании кода на C#.
 
-In the following examples, any of the guidance pertaining to elements marked `public` is also applicable when working with `protected` and `protected internal` elements, all of which are  intended to be visible to external callers.
+В следующих примерах рекомендации, относящиеся к элементам с пометкой `public`, также применимы при работе с элементами `protected` и `protected internal`, все из которых являются видимыми для внешних пользователей.
 
 ### Pascal case
 
-Use pascal casing ("PascalCasing") when naming a `class`, `record`, or `struct`.
+Используйте pascal casing ("PascalCasing") при именовании `class`, `record`, или `struct`.
 
 ```csharp
 public class DataService
@@ -52,7 +52,7 @@ public struct ValueCoordinate
 }
 ```
 
-When naming an `interface`, use pascal casing in addition to prefixing the name with an `I`. This clearly indicates to consumers that it's an `interface`.
+При именовании `interface`, используйте pascal casing  в дополнение к префиксу имени с `I`. Это явно укажет потребителю, что перед ним `interface`.
 
 ```csharp
 public interface IWorkerQueue
@@ -60,7 +60,7 @@ public interface IWorkerQueue
 }
 ```
 
-When naming `public` members of types, such as fields, properties, events, methods, and local functions, use pascal casing.
+При именовании `public` членов типов, таких как поля, свойства, события, методы, и локальные функции, используйте pascal casing.
 
 ```csharp
 public class ExampleEvents
@@ -98,7 +98,7 @@ For more information on positional records, see [Positional syntax for property 
 
 ### Camel case
 
-Use camel casing ("camelCasing") when naming `private` or `internal` fields, and prefix them with `_`.
+Используйте camel casing ("camelCasing") при именовании `private` или `internal` полей, с префиксом `_`.
 
 ```csharp
 public class DataService
